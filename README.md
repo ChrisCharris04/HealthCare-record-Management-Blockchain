@@ -1,27 +1,28 @@
-Blockchain: Health Records Management Using Blockchain
-Introduction
+**Blockchain: Health Records Management Using Blockchain
+Introduction**
 The aim of this framework is firstly to implement blockchain technology for EHR and secondly to provide secure storage of electronic records by defining granular access rules for the users of the proposed framework. Moreover, this framework also discusses the scalability problem faced by the blockchain technology in general via use of off-chain storage of the records. This framework provides the EHR system with the benefits of having a scalable, secure and integral blockchain-based solution.
 
-Application Demo Video
+**Application Demo Video**
 
 **Installation**
 The project requires NodeJS and npm to work. Instructions to install all other dependencies are given below.
 
-Node modules
+**Node modules**
 Move to the project directory and open it in your terminal.
 Run npm install to install project dependencies.
-Ganache
+**Ganache**
 Go to the Ganache homepage and download.
 If you are on Linux, you must have received an .appimage file. Follow the installation instructions available here.
-IPFS
+**IPFS**
 Go to the GitHub page of IPFS and install IPFS Desktop
 Local server
 Install Node lite-server by running the following command on your terminal: npm install -g lite-server
-Metamask
+**Metamask**
 Metamask is a browser extension available for Google Chrome, Mozilla Firefox, and Brave Browser.
 Go to this link and add Metamask to your browser.
-Getting the dApp running
-Configuration
+
+**Getting the App running
+Configuration**
 1. Ganache
 Open Ganache and click on settings in the top right corner.
 Under Server tab:
@@ -30,7 +31,8 @@ Set Port Number to 8545
 Enable Automine
 Under the Accounts & Keys tab:
 Enable Autogenerate HD Mnemonic
-2. IPFS
+
+3. IPFS
 Fire up your terminal and run ipfs init
 
 Then run
@@ -50,15 +52,15 @@ Install Truffle using npm install truffle -g
 Compile Contracts using truffle compile
 1. Starting your local development blockchain
 Open Ganache.
-Make sure to configure it the way mentioned above.
+Ensure that you configure it as mentioned above.
 Open a new Terminal and deploy contracts using truffle migrate
 Copy the deployed contract address to src/app.js alt text
 // app/src/app.js  line number 11
 var agentContractAddress = '0x75E115394aacC7c6063E593B9292CB9417E4cbeC';
 If you change the contents of any contract, replace the existing deployment using truffle migrate --reset
-Note: reset of the contract will change the contract Address, which needs to be updated in src/app.js
+Note: Resetting the contract will change the contract Address, which needs to be updated in src/app.js
 
-Running the dApp
+**Running the App**
 1. Connecting Metamask to our local blockchain
 Connect Metamask to localhost:8485
 Click on import account alt text
